@@ -49,7 +49,7 @@ public class MockData {
                     plantedInfo.setCrop(crop);
                     plantedInfo.setSeason(season);
                     plantedInfo.setPlantingAreaInAcres(10.0);
-                    plantedInfo.setExpectedProduct(100.0);
+                    plantedInfo.setExpectedProduct(100.0 * farm.getId());
                     plantedInfoList.add(plantedInfo);
                 }
             }
@@ -68,7 +68,7 @@ public class MockData {
                     harvestedInfo.setFarm(farm);
                     harvestedInfo.setCrop(crop);
                     harvestedInfo.setSeason(season);
-                    harvestedInfo.setActualProductOutput(80.0);
+                    harvestedInfo.setActualProductOutput(80.0 * farm.getId());
                     harvestedInfoList.add(harvestedInfo);
                 }
             }
